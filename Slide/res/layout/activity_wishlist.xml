@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="55dp"
+        layout="@layout/activity_header_mobile" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="290dp"
+                android:layout_height="225dp"
+                android:layout_below="@+id/tableRow1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_wishlist"
+                android:src="@drawable/bg_wishlist" />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_wishlist"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_wishlist" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/wishlistTitulo"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="240dp"
+                android:layout_height="31dp"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="240dp"
+                android:layout_height="31dp"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="4dp"
+                android:background="#fff" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="240dp"
+                android:layout_height="31dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_below="@+id/view2"
+                android:layout_marginTop="4dp"
+                android:background="#fff" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="110dp"
+                android:layout_height="31dp"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="4dp"
+                android:background="#fff" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignRight="@+id/view3"
+                android:layout_below="@+id/editText_productName"
+                android:layout_marginTop="6dp"
+                android:background="#fff" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_alignRight="@+id/view1"
+                android:layout_alignTop="@+id/view1"
+                android:layout_marginTop="-2dp"
+                android:background="@null"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinner_subCategory"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignTop="@+id/view2"
+                android:layout_marginTop="-2dp"
+                android:background="@null" />
+
+            <EditText
+                android:id="@+id/editText_productName"
+                android:layout_width="230dp"
+                android:layout_height="28dp"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignTop="@+id/view3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Nome do produto"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="13dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:layout_alignLeft="@+id/view4"
+                android:layout_alignTop="@+id/view4"
+                android:layout_below="@+id/view5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Data limite"
+                android:inputType="date"
+                android:textColorHint="#000"
+                android:textSize="13dp" />
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="290dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/tableRow1"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:background="#F5DEB3" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Meus desejos:"
+                    android:textColor="#D2691E"
+                    android:textSize="12dp" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/listView_listaWishlist"
+                android:layout_width="290dp"
+                android:layout_height="360dp"
+                android:layout_alignLeft="@+id/tableRow3"
+                android:layout_below="@+id/tableRow3"
+                android:background="#fff" >
+            </ListView>
+
+            <EditText
+                android:id="@+id/editText_coment"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/view4"
+                android:layout_alignTop="@+id/view5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Descrição"
+                android:inputType="textMultiLine"
+                android:maxHeight="55dp"
+                android:textAlignment="textStart"
+                android:textColorHint="#000"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/imageView_btnCadastrar"
+                android:layout_width="125dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/view5"
+                android:layout_alignTop="@+id/view4"
+                android:onClick="saveWishlist"
+                android:src="@drawable/bt_cadastrar" />
+
+            <WebView
+                android:id="@+id/webView_loading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/listView_listaWishlist"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_footer_mobile"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <!-- cabecalho -->
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="100dp"
+        layout="@layout/include_tablet_header" />
+
+    <!-- linha laranja - titulo e simbolo -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="650dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#FF7F00"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_wishlist" />
+
+        <TextView
+            android:id="@+id/textView_titleOfferByWish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Desejo Teste"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+    </TableRow>
+
+    <!-- Lista -->
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="650dp"
+        android:layout_height="800dp"
+        android:layout_above="@+id/rodape"
+        android:layout_below="@+id/tableRow1"
+        android:layout_centerHorizontal="true"
+        android:columnWidth="250dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    <!-- webView carrega o loading -->
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!-- rodape -->
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_tablet_footer"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

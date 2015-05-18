@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/x_include_footer"
+        android:gravity="center_horizontal" />
+
+    <GridView
+        android:id="@+id/offersGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/include1"
+        android:layout_toRightOf="@+id/include2"
+        android:columnWidth="250dp"
+        android:numColumns="4"
+        android:paddingBottom="5dp" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/tvOffersWishWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Ops... Ainda não existem ofertas \n para esse desejo!!!"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvOffersMyProfileWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Ops... Não encontramos ofertas  para o seu perfil.\n Tente assinar algumas empresas!!! "
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pbGeneric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

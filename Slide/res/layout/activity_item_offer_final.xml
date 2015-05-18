@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imgTeste"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:background="#dcdcdc"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgTeste"
+        android:layout_alignLeft="@+id/imgTeste"
+        android:layout_alignRight="@+id/imgTeste"
+        android:layout_alignTop="@+id/item_valor_sem_desconto"
+        android:alpha="0.4"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/item_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgTeste"
+        android:layout_alignLeft="@+id/imgTeste"
+        android:paddingBottom="2dp"
+        android:paddingLeft="15dp"
+        android:text="R$ 900,99"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_valor_sem_desconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_valor"
+        android:layout_alignLeft="@+id/imgTeste"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="2dp"
+        android:text="De R$ 999,00"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <!--
+         <Button
+        android:id="@+id/item_btn_comprar"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgTeste"
+        android:layout_alignRight="@+id/imgTeste"
+        android:layout_alignTop="@+id/item_valor_sem_desconto"
+        android:background="@drawable/adventa_icon_compra_branco" />
+    -->
+
+
+    <!--
+         <Button
+        android:id="@+id/item_btn_compartilhar"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgTeste"
+        android:layout_alignTop="@+id/item_btn_comprar"
+        android:layout_toLeftOf="@+id/item_btn_comprar"
+        android:background="@drawable/adventa_icon_share_branco" />
+    -->
+
+    <ImageView
+        android:id="@+id/imgDesconto"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imgTeste"
+        android:layout_alignTop="@+id/imgTeste"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/adventa_icon_desconto"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvDesconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgDesconto"
+        android:layout_alignLeft="@+id/imgDesconto"
+        android:layout_alignRight="@+id/imgDesconto"
+        android:layout_alignTop="@+id/imgDesconto"
+        android:gravity="center"
+        android:text="12%\noff"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

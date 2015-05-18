@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_box"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/bg_box_input" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="175dp"
+                    android:src="@drawable/icon_usuarios" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="230dp"
+                    android:src="@drawable/icon_senhas" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="300dp"
+                    android:onClick="login"
+                    android:src="@drawable/bg_button" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="onFBLoginClick"
+                    android:src="@drawable/bt_facebook" />
+
+                <ImageView
+                    android:id="@+id/imageView_dadosIncorretos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="125dp"
+                    android:src="@drawable/box_avisos" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="310dp"
+                    android:text="Entrar"
+                    android:textColor="#ffff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="168dp"
+                    android:ems="10"
+                    android:hint="Usuário"
+                    android:inputType="textEmailAddress" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="220dp"
+                    android:ems="10"
+                    android:hint="Senha"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/textView_termosDeUso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="350dp"
+                    android:text="Termos de Uso - Política de Privacidade"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/textView_dadosIncorretos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="135dp"
+                    android:text="Dados incorretos!"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_conect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="265dp"
+                    android:checked="true"
+                    android:text="Manter-me conectado"
+                    android:textColor="#838B83" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:onClick="esqueciMinhaSenha"
+                android:src="@drawable/bg_button_esqueci_a_senha" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:text="ESQUECI MINHA SENHA"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

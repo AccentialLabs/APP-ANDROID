@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <!-- cabecalho -->
+
+    <include
+        android:id="@+id/header"
+        android:layout_height="100dp"
+        layout="@layout/include_tablet_header" />
+
+    <!-- corpo -->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/buy_success" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Compra Realizada com Sucesso!"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veja os detalhes em "
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minhas Compras"
+            android:textColor="#D2691E"
+            android:textSize="22dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/compras_on" />
+    </TableRow>
+
+    <!-- rodape -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_tablet_footer"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="120dp"
+    android:background="#fff" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imageView_compPhoto"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/textView_companyName"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_compPhoto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@+id/imageView_compPhoto"
+        android:lines="1"
+        android:text="VITAL CLINICA DE ESTÉTICA - ERP "
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_companyEmail"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_compPhoto"
+        android:layout_alignLeft="@+id/textView_companyName"
+        android:lines="1"
+        android:text="atendimento@vitalesthetic.com.br"
+        android:textSize="10dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView_botaoDelete"
+        android:layout_width="15dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/bt_delete" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_toLeftOf="@+id/imageView_botaoDelete"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/imageView_botaoAdd"
+        android:layout_width="15dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:src="@drawable/bt_add" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_toLeftOf="@+id/imageView_botaoAdd"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/diviser_h" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_below="@+id/imageView5"
+        android:src="@drawable/diviser_v" />
+
+    <TextView
+        android:id="@+id/textView_companyDescription"
+        android:layout_width="228dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/imageView_compPhoto"
+        android:layout_alignRight="@+id/textView_companyEmail"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="2dp"
+        android:text="TextView"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Essa empresa possui "
+        android:textColor="#D2691E"
+        android:textSize="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView100"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/bt_arrow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:clickable="true"
+        android:text="Veja essas ofertas"
+        android:textColor="#D97500"
+        android:textSize="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/diviser_h" />
+
+    <TextView
+        android:id="@+id/textView_qtdOfertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_text"
+        android:layout_below="@+id/textView_text"
+        android:text="ofertas"
+        android:textColor="#D2691E"
+        android:textSize="8dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Veja todas as ofertas dessa empresa"
+        android:textColor="#D97500"
+        android:textSize="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView100"
+        android:layout_alignTop="@+id/textView3"
+        android:src="@drawable/bt_arrow" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_qtdOfertas"
+        android:layout_below="@+id/textView_qtdOfertas"
+        android:text="para o seu perfil"
+        android:textColor="#D2691E"
+        android:textSize="5dp" />
+
+</RelativeLayout>

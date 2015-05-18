@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="550dp"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="550dp"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F5DEB3" >
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_titleCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableRow1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tableRow2"
+        android:maxLines="2"
+        android:text="Nome da Empresa"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_titleCompany"
+        android:layout_below="@+id/textView_titleCompany"
+        android:layout_marginBottom="5dp"
+        android:text="Assine e receba nosso feed "
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_titleCompany" >
+
+        <ImageView
+            android:id="@+id/imageView_add"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/bt_add" />
+
+        <ImageView
+            android:id="@+id/imageView_remove"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/bt_delete" />
+    </TableRow>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/preto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Preto"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFBLoginClick"
+        android:text="TESTE LOGIN NO FBK"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="Button" />
+
+    <CheckBox
+        android:id="@+id/cinza"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcdcdc"
+        android:text="Cinza"
+        android:textColor="#000" />
+
+    <CheckBox
+        android:id="@+id/branco"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="Branco"
+        android:textColor="#000" />
+
+    <CheckBox
+        android:id="@+id/verd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="Verde"
+        android:textColor="#000" />
+
+    <CheckBox
+        android:id="@+id/azul"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="Azul"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/txt_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <WebView
+        android:id="@+id/meuWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:lines="5"
+        android:text="Cor selecionada:sdsdsdsdsdsdsdsdsdsdsd"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/textCor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="cor" />
+
+    <View
+        android:id="@+id/viewPreta"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#000" />
+
+    <View
+        android:id="@+id/viewAzul"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#0000ff" />
+
+    <View
+        android:id="@+id/viewVerde"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#00ff00" />
+
+</LinearLayout>

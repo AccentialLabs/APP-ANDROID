@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="55dp"
+        layout="@layout/activity_header_mobile" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1" >
+
+        <RelativeLayout
+            android:id="@+id/relativo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="290dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_wishlist" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="125dp"
+                android:layout_height="26dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignRight="@+id/view1"
+                android:layout_below="@+id/view2"
+                android:background="#D2691E" />
+
+            <!-- TEXTO DO ANUNCIO -->
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_alignTop="@+id/view1" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="Arial"
+                        android:text="@string/assinaturasTexto1"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/assinaturasTexto2"
+                        android:textColor="#ffffff"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/assinaturasTexto3"
+                        android:textColor="#ffffff"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/assinaturasTexto4"
+                        android:textColor="#ffffff"
+                        android:textSize="11dp" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="290dp"
+                android:layout_height="18dp"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/view3"
+                android:background="#FFDEAD" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/listView_listaAssinaturas"
+                android:layout_alignLeft="@+id/view4"
+                android:layout_below="@+id/view3"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="Empresas"
+                android:textColor="#D2691E"
+                android:textSize="12dp" />
+
+            <ListView
+                android:id="@+id/listView_listaAssinaturas"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view4"
+                android:layout_below="@+id/view4"
+                android:background="#fff" >
+            </ListView>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="290dp"
+                android:layout_height="26dp"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/view1"
+                android:background="#ffffff" />
+
+            <!-- BACKGROUND BRANCO - EDITTEXT - BOTAO PROCURAR -->
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="210dp"
+                android:layout_height="18dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignTop="@+id/view2"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_form_busca" />
+
+            <EditText
+                android:id="@+id/editText_searchByTitle"
+                android:layout_width="105dp"
+                android:layout_height="14dp"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="pesquise aqui"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:onClick="searchComps"
+                android:src="@drawable/bt_buscar" />
+
+            <TextView
+                android:id="@+id/textView_qtdCompanies"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:layout_above="@+id/view4"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignRight="@+id/view3"
+                android:layout_alignTop="@+id/view3"
+                android:gravity="center"
+                android:text="Você está recebendo ofertas de ** empresa(s)"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+            <WebView
+                android:id="@+id/webViewLoader"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp" >
+            </WebView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/activity_footer_mobile" />
+    </LinearLayout>
+
+</RelativeLayout>

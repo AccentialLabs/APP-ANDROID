@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view1"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/trueone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="CADASTRAR NOVO USUÁRIO"
+        android:textColor="#363636"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bg_busca" />
+
+    <EditText
+        android:id="@+id/editText_createUserEmail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_createUserName"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="E-MAIL"
+        android:inputType="textPersonName" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bt_cadastrar" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_createUserPassword"
+        android:layout_alignTop="@+id/imageView5"
+        android:src="@drawable/bt_buscar_02" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:text="CANCELAR"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:src="@drawable/bg_busca" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:src="@drawable/bg_busca" />
+
+    <EditText
+        android:id="@+id/editText_createUserPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_createUserEmail"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_createUserName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="NOME"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

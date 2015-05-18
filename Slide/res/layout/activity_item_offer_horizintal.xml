@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="262dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/imageView_bgTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/bg_titulo_produto" />
+
+        <!--
+     para testar o codigo de carregamento em background usaremos uma ImageView 
+       <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageView_offerFoto"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView_bgTitulo" />
+        -->
+
+        <ImageView
+            android:id="@+id/imageView_offerFoto"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView_bgTitulo" />
+
+        <ImageView
+            android:id="@+id/imageView_ImageNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView_bgTitulo"
+            android:src="@drawable/icon_novo_p" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_offerFoto"
+            android:src="@drawable/diviser_h" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorVert"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:layout_alignTop="@+id/tableRow4"
+            android:layout_toRightOf="@+id/tableRow4"
+            android:src="@drawable/diviser_v" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageView_CompanyPhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/imageView_divisorHorizontal3"
+            android:layout_alignRight="@+id/imageView_divisorHorizontal2"
+            android:layout_below="@+id/imageView_divisorHorizontal2" />
+
+        <ImageView
+            android:id="@+id/imageView_maisInfos"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imageView_offerFoto"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bt_maisinfos" />
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_divisorHorizontal"
+            android:layout_marginLeft="5dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_gray" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="+90"
+                android:textColor="#FFD700"
+                android:textSize="10dp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView_btComprar"
+            android:layout_width="90dp"
+            android:layout_height="29dp"
+            android:layout_alignBottom="@+id/imageView_divisorVert"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imageView_divisorVert"
+            android:background="@drawable/bg_btcomprar"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="teste"
+            android:text="COMPRAR"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView_TituloOffer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_bgTitulo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Ipad Mini Apple 32GB"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tableRow4"
+            android:layout_below="@+id/tableRow4"
+            android:src="@drawable/diviser_h" />
+
+        <View
+            android:id="@+id/viewTeste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_btComprar"
+            android:layout_alignTop="@+id/textView_btComprar"
+            android:onClick="selectOfferItem" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewTeste"
+            android:layout_alignTop="@+id/tableRow4"
+            android:layout_toRightOf="@+id/imageView_divisorVert" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView_valorOriginal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:text="de R$1799,00"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-3dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView_valorAtual"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Por R$50,00"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView_numParcelas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="-3dp"
+                    android:gravity="center"
+                    android:text="em até 24x de R$ 99,99"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_divisorVert"
+            android:src="@drawable/diviser_h" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_valiDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Válido até 30/11/2013 - 9 em estoque"
+        android:textSize="11dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

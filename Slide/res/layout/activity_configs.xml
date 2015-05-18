@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <!-- CABECALHO -->
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="55dp"
+        layout="@layout/activity_header_mobile" />
+
+    <!-- CORPO -->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_wishlist" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignTop="@+id/view1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Preferências"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <!-- RODAPE -->
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_footer_mobile"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/tableRow1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:text="Notificações:"
+            android:textColor="#fff"
+            android:textStyle="italic" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/tableRow2" >
+
+        <Spinner
+            android:id="@+id/spinner_notifications"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#fff" />
+    </TableRow>
+
+</RelativeLayout>

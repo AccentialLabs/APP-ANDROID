@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="262dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/imageView_bgTitulo"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bg_titulo_produto" />
+
+        <TextView
+            android:id="@+id/textView_TituloOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_bgTitulo"
+            android:layout_alignLeft="@+id/imageView_bgTitulo"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView_bgTitulo"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Ipad Mini Apple 32GB"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageView_offerFoto"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imageView_bgTitulo"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_offerFoto"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/diviser_h" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorVert"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@+id/imageView_divisorHorizontal"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/diviser_v" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_divisorVert"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/imageView_divisorVert"
+            android:src="@drawable/diviser_h" />
+
+        <ImageView
+            android:id="@+id/imageView_divisorHorizontal3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_divisorVert"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/diviser_h" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageView_CompanyPhoto"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/imageView_divisorHorizontal3"
+            android:layout_alignRight="@+id/imageView_divisorHorizontal2"
+            android:layout_below="@+id/imageView_divisorHorizontal2" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_divisorHorizontal"
+            android:layout_toRightOf="@+id/imageView_divisorVert"
+            android:textAlignment="center" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" >
+
+                <TextView
+                    android:id="@+id/textView_valorOriginal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="de R$1799,00"
+                    android:textSize="11dp"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_valorAtual"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Por R$50,00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp" >
+
+                <TextView
+                    android:id="@+id/textView_numParcelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="11dp"
+                    android:visibility="invisible" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView_ImageNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView_bgTitulo"
+            android:layout_alignTop="@+id/imageView_offerFoto"
+            android:src="@drawable/icon_novo_p" />
+
+        <ImageView
+            android:id="@+id/imageView_maisInfos"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imageView_offerFoto"
+            android:layout_alignRight="@+id/imageView_offerFoto"
+            android:src="@drawable/bt_maisinfos" />
+
+        <TextView
+            android:id="@+id/textView_btComprar"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/imageView_divisorHorizontal3"
+            android:layout_toRightOf="@+id/imageView_divisorVert"
+            android:background="@drawable/bg_btcomprar"
+            android:gravity="center"
+            android:text="COMPRAR"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView_divisorHorizontal"
+            android:layout_below="@+id/imageView_divisorHorizontal2"
+            android:layout_toLeftOf="@+id/imageView_divisorHorizontal"
+            android:src="@drawable/diviser_h" />
+
+        <!-- QUADRO DE ESTRELAS - POR ENQUANTO SÓ DE ENFEITE -->
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView_CompanyPhoto"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignTop="@+id/imageView_divisorVert"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_color" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/star_gray" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="+90"
+                android:textColor="#FFD700"
+                android:textSize="13dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/viewTeste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tableLayout1"
+            android:layout_alignRight="@+id/textView_btComprar"
+            android:layout_alignTop="@+id/textView_btComprar"
+            android:onClick="selectOfferItem" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_valiDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Válido até 30/11/2013 - 9 em estoque"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

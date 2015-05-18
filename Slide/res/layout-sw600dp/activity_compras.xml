@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rodape"
+        android:layout_centerHorizontal="true" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            layout="@layout/include_tablet_header" />
+
+        <ImageView
+            android:id="@+id/imageView_bgTitle"
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view1"
+            android:layout_below="@+id/header"
+            android:src="@drawable/bg_title" />
+
+        <ExpandableListView
+            android:id="@android:id/list"
+            android:layout_width="650dp"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/view1"
+            android:layout_below="@id/imageView_bgTitle"
+            android:background="#fff"
+            android:childDivider="@android:color/white"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="2dp"
+            android:fadingEdge="none" >
+        </ExpandableListView>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/comprasTabNumPedido"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="@string/comprasTabProduto"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/comprasTabData"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/comprasTabValor"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:text="@string/comprasTabStatus"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <WebView
+            android:id="@+id/webViewLoad"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rodape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/include_tablet_footer" />
+
+</RelativeLayout>

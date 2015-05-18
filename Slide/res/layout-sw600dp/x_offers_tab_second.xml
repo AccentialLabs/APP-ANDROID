@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvOfferDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnComprar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:text="Essa oferta não possui desc."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#808080"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#f37165"
+        android:text="COMPRAR"
+        android:textSize="24sp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/starCompDetail3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/starCompDetail2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/starCompDetail3"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/starCompDetail3"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/starCompDetail1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/starCompDetail2"
+        android:layout_toLeftOf="@+id/starCompDetail2"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/starCompDetail4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/starCompDetail3"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@+id/starCompDetail3"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/starCompDetail5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/starCompDetail4"
+        android:layout_toRightOf="@+id/starCompDetail4"
+        android:src="@drawable/adventa_star_empty" />
+
+    <Button
+        android:id="@+id/btnCompDetailAssinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#f37165"
+        android:text="✓ Assinar"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvCompDetailCommentQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/starCompDetail5"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/starCompDetail5"
+        android:alpha="0.6"
+        android:text="+ 0"
+        android:textColor="#808080" />
+
+    <ListView
+        android:id="@+id/lvCompDetailComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCompDetailAssinar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableRow1"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp" >
+    </ListView>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/starCompDetail1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvCompDetailWarningComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="As ofertas dessa empresa ainda\n não receberam comentários."
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

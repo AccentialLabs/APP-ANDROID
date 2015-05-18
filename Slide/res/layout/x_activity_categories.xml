@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="#f37165" />
+
+    <ListView
+        android:id="@+id/lvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1" >
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/pbCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tvTitleCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Categorias"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <!-- rodape -->
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/x_include_footer"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

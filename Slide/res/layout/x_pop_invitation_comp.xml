@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="#f37165" />
+
+    <TextView
+        android:id="@+id/tvPopCompName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Company Fancy Name"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPopCompDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:padding="10dp"
+        android:text="Aqui vem a descricao da company nono no nonon nononon non nono no onononon "
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPopCompDesc"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnInivitNot"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnInivitYes"
+        android:layout_below="@+id/btnInivitYes"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#3399cc"
+        android:text="Não"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnInivitYes"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#f37165"
+        android:text="Sim"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnInivitYes"
+        android:layout_alignRight="@+id/btnInivitYes"
+        android:layout_below="@+id/tableRow2"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Deseja seguir e receber as ofertas desta empresa?"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnVoltar"
+        android:layout_marginTop="5dp"
+        android:alpha="0.1"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnVerPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnInivitNot"
+        android:layout_alignRight="@+id/btnInivitNot"
+        android:layout_below="@+id/btnInivitNot"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#808080"
+        android:text="Ver perfil da empresa"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnVerPerfil"
+        android:layout_alignRight="@+id/btnVerPerfil"
+        android:layout_below="@+id/btnVerPerfil"
+        android:background="#664d4d4d"
+        android:text="Voltar"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/svOfferImg"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/examplo_img_horizontal" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivOfferPhoto1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/assinaturas_off"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivOfferPhoto2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/assinaturas_on"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivOfferPhoto3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/assinaturas_off"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivOfferPhoto4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/assinaturas_off"
+                android:visibility="gone" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivOfferPhoto5"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#ffffff"
+                android:src="@drawable/assinaturas_off"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignTop="@+id/star1"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/star1"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignTop="@+id/star2"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/star2"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignTop="@+id/star3"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/star3"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignTop="@+id/star4"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/star4"
+        android:src="@drawable/adventa_star_empty" />
+
+    <TextView
+        android:id="@+id/tvOfferQtdComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/star5"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/star5" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:background="#808080" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvOfferValComDesconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferValOriginal"
+        android:layout_below="@+id/tvOfferValOriginal"
+        android:text="Por R$ --,--"
+        android:textColor="#808080"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferValComDesconto"
+        android:layout_below="@+id/tvOfferValComDesconto"
+        android:text="12x de R$ --,--"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginBottom="-10dp"
+        android:background="#808080"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="TextView"
+        android:textColor="#cccccc"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvOfferValOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="De R$ --,--"
+        android:textColor="#808080"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnShare"
+        android:layout_alignBottom="@+id/tvOfferValComDesconto"
+        android:layout_alignTop="@+id/tvOfferValComDesconto"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvOfferValComDesconto"
+        android:src="@drawable/adventa_star_empty" />
+
+    <ProgressBar
+        android:id="@+id/pbOffersDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/vMetrics"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/vMetrics"
+        android:layout_alignTop="@+id/vMetrics"
+        android:background="@drawable/border"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vMetrics"
+        android:layout_alignLeft="@+id/vMetrics"
+        android:layout_alignRight="@+id/view3"
+        android:layout_alignTop="@+id/vMetrics"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/vMetrics"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/vMetrics"
+        android:layout_marginTop="3dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnComprar"
+        android:layout_alignRight="@+id/btnComprar"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/adventa_icon_share_on" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vMetrics"
+        android:layout_alignTop="@+id/vMetrics"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/view3"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/vHideMetrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view5"
+        android:layout_alignLeft="@+id/vMetrics"
+        android:layout_alignRight="@+id/view5"
+        android:layout_alignTop="@+id/vMetrics"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPlusOrLess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#f37165"
+        android:clickable="false"
+        android:padding="10dp"
+        android:text="COMPRAR"
+        android:textColor="#ffffff" />
+
+    <View
+        android:id="@+id/vBlockOffersDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="#000000"
+        android:visibility="gone" />
+    
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imgCompLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vMetrics"
+        android:layout_below="@+id/vMetrics"
+        android:layout_marginTop="21dp"
+        android:maxHeight="80dp"
+        android:maxWidth="180dp"
+        android:visibility="gone"
+        android:src="@drawable/accential" />
+
+</RelativeLayout>

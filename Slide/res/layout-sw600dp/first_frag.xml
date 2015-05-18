@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="55dp"
+        layout="@layout/x_include_header" />
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        layout="@layout/x_include_footer" />
+
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/include1"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/include1"
+          android:background="@drawable/border"
+          android:ems="10"
+          android:hint="Nome do Produto"
+          android:paddingBottom="10dp"
+          android:paddingLeft="10dp"
+          android:paddingTop="10dp"
+          android:textColor="#f37165"
+          android:textColorHint="#cccccc"
+          android:textSize="16sp"
+          android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+    
+    <GridView
+        android:id="@+id/gridOffersAdventa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/include2"
+        android:numColumns="4"
+        android:textAlignment="center" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/pbAdventaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ProgressBar
+        android:id="@+id/pbPrincipalAtualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pbAdventaPrincipal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvPrincipalAtualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gridOffersAdventa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Atualizando lista"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/btnSearchOffer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/adventa_icon_lupa_on" />
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/include1"
+       android:layout_marginTop="15dp"
+        android:layout_marginLeft="57dp"
+        android:alpha="0.4"
+        android:background="@drawable/iconfilter" />
+
+</RelativeLayout>

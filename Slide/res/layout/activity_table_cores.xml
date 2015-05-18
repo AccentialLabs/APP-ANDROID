@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff" >
+
+    <View
+        android:id="@+id/view_ladoEsquerdoTblCor"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#dcdcdc" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#dcdcdc" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- TABELINHA DE COR -->
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <View
+            android:id="@+id/view_cor_preto"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/view_cor_cinza"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#dcdcdc" />
+
+        <View
+            android:id="@+id/view_cor_branco"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/view_cor_azul_claro"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#CAE1FF" />
+
+        <View
+            android:id="@+id/view_cor_azul"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#0000ff" />
+
+        <View
+            android:id="@+id/view_cor_vermelho"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#FF0000" />
+
+        <View
+            android:id="@+id/view_cor_verde"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="3dp"
+            android:background="#2E8B57" />
+    </TableRow>
+
+    <!-- TEXTOS VERTICAIS -->
+
+    <com.accential.trueone.utils.VerticalTextView
+        android:id="@+id/textView_verticalTamanho"
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom|right"
+        android:text="Tamanho"
+        android:textAlignment="center"
+        android:textSize="8dp" />
+
+    <com.accential.trueone.utils.VerticalTextView
+        android:id="@+id/verticalTextView1"
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/tableRow4"
+        android:gravity="bottom|right"
+        android:text="Cor"
+        android:textSize="9dp" />
+
+    <com.accential.trueone.utils.VerticalTextView
+        android:id="@+id/textView_verticalConfiguracao"
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view8"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="bottom|right"
+        android:text="Configuração"
+        android:textSize="7dp" />
+
+</RelativeLayout>

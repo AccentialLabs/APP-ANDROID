@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp" >
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/textView_ComprasNumPedido"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="right"
+            android:lines="1"
+            android:text="9999"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/diviser_v" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/smartImageView_ComprasPhotoPedido"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:id="@+id/textView_ComprasTitleOffer"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Tratamento de limpeza de pele"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/diviser_v" />
+
+        <TextView
+            android:id="@+id/textView_ComprasDataCompra"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="01/01/2014"
+            android:textSize="7dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/diviser_v" />
+
+        <TextView
+            android:id="@+id/textView_ComprasValorTotal"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="R$ 9999,99"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/diviser_v" />
+
+        <TextView
+            android:id="@+id/textView_ComprasStatus"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="1"
+            android:text="INICIO"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_ComprasDescOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="TextView"
+        android:textSize="2dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

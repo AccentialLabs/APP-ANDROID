@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_height="55dp"
+        layout="@layout/activity_header_mobile" />
+
+    <TextView
+        android:id="@+id/textView_detailsOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhe da Oferta"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_MiniDetailsOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detalhes do produto selecionado"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_datails1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_details"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/imageView_details"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp" />
+
+                <TextView
+                    android:id="@+id/textView_details2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView_valorRiscado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textStyle="" />
+
+                <TextView
+                    android:id="@+id/textView_details3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_detailsCompName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp" >
+
+                    <TextView
+                        android:id="@+id/textView_datails5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/info"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_datails6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/especifi"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_datails7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/opn"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_datails8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:layout_height="55dp"
+                layout="@layout/include_tablet_footer" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

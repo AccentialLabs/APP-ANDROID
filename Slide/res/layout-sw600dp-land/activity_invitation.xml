@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <!-- header -->
+
+    <include
+        android:id="@+id/header"
+        android:layout_height="100dp"
+        layout="@layout/include_tablet_header" />
+
+    <!-- body -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="550dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/bg_wishlist"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convites Enviados"
+            android:textColor="#fff"
+            android:textSize="23dp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listView_invitations"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignLeft="@+id/tableRow1"
+        android:layout_below="@+id/tableRow1"
+        android:background="#fff" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView_invitesNotFound"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="VOCÊ NÃO TEM CONVITES NO MOMENTO"
+        android:textSize="30dp" />
+
+    <!-- footer -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_tablet_footer"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

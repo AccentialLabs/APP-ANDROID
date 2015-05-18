@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/bg_topo_tablet_sec" />
+
+    <ImageView
+        android:id="@+id/imageView2_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/imageView_header"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/trueone" />
+
+    <TextView
+        android:id="@+id/textViewHeader_NomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="51dp"
+        android:layout_toLeftOf="@+id/imageView_userPhoto"
+        android:text="Amanda Chagas"
+        android:textSize="16dp" />
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imageView_userPhoto"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView2_lg"
+        android:layout_marginRight="41dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView_userPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textViewHeader_NomeUsuario"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom"
+        android:text=""
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView_avisoConvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:src="@drawable/icon_convite" />
+
+    <TextView
+        android:id="@+id/textView_qtdConvites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_avisoConvite"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="3"
+        android:textColor="#fff" />
+
+    <Spinner
+        android:id="@+id/spinner_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHeader_NomeUsuario"
+        android:layout_alignLeft="@+id/textViewHeader_NomeUsuario"
+        android:layout_alignTop="@+id/textViewHeader_NomeUsuario"
+        android:layout_toLeftOf="@+id/textView1" />
+
+</RelativeLayout>

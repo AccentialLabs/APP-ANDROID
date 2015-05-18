@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ivOfferPhoto"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:src="@drawable/androidlogo" />
+
+    <TextView
+        android:id="@+id/tvOfferTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivOfferPhoto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/ivOfferPhoto"
+        android:text="NON NOONNON NON"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOfferValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferTitle"
+        android:layout_below="@+id/tvOfferTitle"
+        android:layout_marginTop="5dp"
+        android:text="R$ 99,99" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/ivOfferPhoto"
+        android:layout_alignParentRight="true"
+        android:background="#FF7F00"
+        android:text="Comprar"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FF7F00"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivOfferPhoto" >
+    </TableRow>
+
+</RelativeLayout>

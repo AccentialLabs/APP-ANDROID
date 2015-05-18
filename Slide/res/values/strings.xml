@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_id">370199149822855</string>
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="login_intro">Check out your Facebook profile by logging in with the button below!</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="app_name">Adventa</string>
+    <string name="action_users_offers_as_list" tools:ignore="MissingTranslation">Mostra em Lista</string>
+    <string name="action_users_settings" tools:ignore="MissingTranslation">Meus dados</string>
+    <string name="action_share" tools:ignore="MissingTranslation">Compartilhar</string>
+    <string name="action_settings" tools:ignore="MissingTranslation">Settings</string>
+    <string name="hello_world" tools:ignore="MissingTranslation">Hello world!</string>
+    <string name="text_empty" tools:ignore="MissingTranslation">TextView</string>
+    <string name="info" tools:ignore="MissingTranslation">Informacoes</string>
+    <string name="especifi">Especificacoes</string>
+    <string name="opn" tools:ignore="MissingTranslation">Opinioes</string>
+    <string name="offerNotFound" tools:ignore="MissingTranslation">NENHUMA OFERTA ENCONTRADA</string>
+    <!-- OFFER -->
+    <string name="offerItemDateValidate">válido até </string>
+    <!-- WISHLIST -->
+    <string name="wishProduto" tools:ignore="MissingTranslation">Produto</string>
+    <string name="wishDescricao" tools:ignore="MissingTranslation">Descrição</string>
+    <string name="wishCategoria">Categoria</string>
+    <string name="wishSubCategoria" tools:ignore="MissingTranslation">Sub Categoria</string>
+    <string name="wishlistTitle" tools:ignore="MissingTranslation">Lista de desejos</string>
+    <string name="wishlistDesc">Você deseja algum produto e não encontrou? faça o seu pedido aqui</string>
+    <string name="wishlistDataLimite" tools:ignore="MissingTranslation">Data limite</string>
+    <string name="wishlistButton">Criar Desejo</string>
+    <string name="wishlistDataSolicitada" tools:ignore="MissingTranslation">Data da Solicitação</string>
+    <!-- CHECKOUT -->
+    <string name="checkProduto">Produto</string>
+    <string name="checkNumPedido" tools:ignore="MissingTranslation">Num. Pedido</string>
+    <string name="checkValor" translatable="false" tools:ignore="MissingTranslation">Valor</string>
+    <string name="checkTitleCompras">Compras</string>
+    <string name="checkSubTitleCompras" translatable="false" tools:ignore="MissingTranslation">gerenciando suas compras e comentarios de produtos</string>
+    <string name="checkTitleEntrega">Previsão de Entrega:</string>
+    <string name="checkTitlePagamento" translatable="false">Pagamento:</string>
+    <string name="checkTitleMoipCode">Código MoIP:</string>
+    <string name="checkTitleCompany">Empresa:</string>
+    <string name="checkTitleContato">Contato:</string>
+    <string name="checkTitleStatus">Status:</string>
+    <string name="checkTitleDataCompra">Data da Compra</string>
+    <!-- COMPANIES USER -->
+    <string name="companiesSearchComp">Pesquisar empresas</string>
+    <string name="companiesListCompaniesUsers">Empresas</string>
+    <!-- COMPANIES INVITE -->
+    <string name="compInviteTitle">Convites</string>
+    <string name="compInviteTitleNotFound">VOCÊ NÃO TEM CONVITES NO MOMENTO</string>
+    <!-- MENU -->
+    <string name="Dashboard">Dashboard</string>
+    <string name="Ofertas">Ofertas</string>
+    <string name="Compras">Compras</string>
+    <string name="Assinaturas">Assinaturas</string>
+    <string name="Wishlist">Wishlist</string>
+
+    <!-- TABLET -->
+
+
+    <!-- ASSINATURAS -->
+
+    <string name="assinaturasTexto1" translatable="false">Ache empresas participantes do programa!</string>
+    <string name="assinaturasTexto2" translatable="false">• assine ou cancele o recebimento de ofertas personalizadas que forem publicadas por elas.</string>
+    <string name="assinaturasTexto3" tools:ignore="MissingTranslation">• use a busca ao lado para procurar pelo nome da empresa.</string>
+    <string name="assinaturasTexto4" tools:ignore="MissingTranslation">• quando encontrar a que procura, clique nos ícones de "+" para assinar ou "X" para cancelar a assinatura.</string>
+    <string name="buscaEmpresas" translatable="false">Buscar Empresas</string>
+
+    <!-- WISHLIST -->
+
+    <string name="wishlistTitulo" translatable="false">Clique para criar um desejo</string>
+    <string name="wishlistDesejosCadastrados" translatable="false">Seus desejos cadastrados</string>
+    <string name="wishlistProdutosDesejados" translatable="false">Os 10 produtos mais desejados</string>
+    <string name="wishlistTableCliente">Cliente</string>
+    <string name="wishlistTableProduto">Produto</string>
+    <string name="wishlistTableData">Datas / Prazos</string>
+    <string name="wishlistTableDatSolicita">Solicitação: </string>
+    <string name="wishlistTableDatLimite">Data Limite</string>
+
+    <!-- COMPRAS -->
+    <string name="comprasTabNumPedido">Pedido nº</string>
+    <string name="comprasTabProduto">Produto(s)</string>
+    <string name="comprasTabData">Data</string>
+    <string name="comprasTabValor">Valor</string>
+    <string name="comprasTabStatus">Status</string>
+
+</resources>

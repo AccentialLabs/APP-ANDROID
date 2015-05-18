@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="#f37165" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Meu nome"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_below="@+id/etUserName"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Meu Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="14sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserEmail"
+        android:layout_below="@+id/etUserEmail"
+        android:layout_marginTop="5dp"
+        android:text="Sexo"
+        android:textColor="#808080"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spUserGender"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spUserGender"
+        android:layout_below="@+id/spUserGender"
+        android:layout_marginTop="5dp"
+        android:text="Data de Nascimento"
+        android:textColor="#808080"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUserBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/tableRow2"
+        android:layout_below="@+id/textView5"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Data de Nascimento"
+        android:inputType="date"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Meus Dados"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="40dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/view1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_border" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spUserGender"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="10dp"
+        android:text="Nome completo"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etUserBirth"
+        android:layout_alignTop="@+id/etUserBirth"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/spUserGender"
+        android:layout_alignTop="@+id/spUserGender"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnUserSave"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnUserAddress"
+        android:layout_below="@+id/etUserBirth"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#3399cc"
+        android:text="Salvar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnUserAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etUserBirth"
+        android:layout_alignRight="@+id/etUserBirth"
+        android:layout_below="@+id/btnUserSave"
+        android:layout_marginTop="5dp"
+        android:background="#f37165"
+        android:padding="10dp"
+        android:text="Endereço"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnUserCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/btnUserAddress"
+        android:layout_below="@+id/btnUserAddress"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/textView5"
+        android:background="#664d4d4d"
+        android:padding="10dp"
+        android:text="Cancelar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnUserLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnUserAddress"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/btnUserAddress"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#696969"
+        android:text="Log out"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

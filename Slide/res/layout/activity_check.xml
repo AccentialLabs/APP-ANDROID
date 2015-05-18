@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_header_mobile" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rodape"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="-6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_numDoPedido"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_wishlist"
+                android:gravity="center"
+                android:text="Pedido: 2810"
+                android:textColor="#363636"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView_numDoPedido"
+                android:background="#ffffff" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/imageView_imgOffer"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView_numDoPedido"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_2"
+                android:src="@drawable/examplo_img_horizontal" />
+
+            <TextView
+                android:id="@+id/textView_offerTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView_imgOffer"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView_imgOffer"
+                android:text="Teste - Edson"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/offer_valorUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView_offerTitle"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:text="R$ 99,00"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_valorFrete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/offer_valorUnit"
+                android:layout_marginRight="5dp"
+                android:text="Frete: R$ 00,00"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textView_valorTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView_valorFrete"
+                android:layout_below="@+id/textView_valorFrete"
+                android:text="Total: 111,80"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view1"
+                android:src="@drawable/diviser_h" />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:background="#4F4F4F" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Endereço de entrega"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tableRow1"
+                android:background="#fff" />
+
+            <EditText
+                android:id="@+id/end_cep"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="CEP"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/end_numero"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/end_endereco"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="numero"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/end_cidade"
+                android:layout_width="270dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/end_bairro"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="cidade"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/end_nome"
+                android:layout_width="240dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/end_estado"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="nome para o local"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/end_complemento"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/end_numero"
+                android:layout_alignBottom="@+id/end_numero"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/end_numero"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="complemento"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/end_bairro"
+                android:layout_width="145dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/end_complemento"
+                android:layout_alignBottom="@+id/end_complemento"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/end_complemento"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="bairro"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/end_estado"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/end_cidade"
+                android:layout_alignBottom="@+id/end_cidade"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/end_cidade"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="UF"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button_addAddress"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/end_nome"
+                android:layout_below="@+id/end_nome"
+                android:layout_marginTop="5dp"
+                android:background="#FF8C00"
+                android:text="Adicionar endereço"
+                android:textSize="9dp" />
+
+            <Button
+                android:id="@+id/button_newAddress"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/button_addAddress"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/button_addAddress"
+                android:background="#FF8C00"
+                android:text="Escolher outro endereço"
+                android:textSize="9dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/button_addAddress"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/diviser_h" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView2"
+                android:background="#4F4F4F" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="60dp"
+                android:layout_height="16dp"
+                android:layout_above="@+id/textView_valorFrete"
+                android:layout_alignLeft="@+id/textView_offerTitle"
+                android:background="#FF8C00"
+                android:gravity="center"
+                android:text="Quantidade"
+                android:textColor="#fff"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_qtd"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="1"
+                android:inputType="number"
+                android:textAlignment="inherit"
+                android:textSize="9dp" />
+
+            <ImageView
+                android:id="@+id/btn_retiraQtd"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignTop="@+id/editText_qtd"
+                android:layout_toRightOf="@+id/editText_qtd"
+                android:src="@drawable/retira_qtd" />
+
+            <ImageView
+                android:id="@+id/btn_addQtd"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_above="@+id/textView_valorFrete"
+                android:layout_toRightOf="@+id/btn_retiraQtd"
+                android:src="@drawable/adiciona_qtd" />
+
+            <EditText
+                android:id="@+id/end_endereco"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/end_cep"
+                android:layout_alignBottom="@+id/end_cep"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/end_cep"
+                android:background="@drawable/border_2"
+                android:ems="10"
+                android:hint="endereco"
+                android:inputType="textEmailAddress"
+                android:textSize="11dp" />
+            <!--
+                 <Spinner
+                android:id="@+id/spinner_testeEstado"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/end_nome"
+                android:layout_toRightOf="@+id/end_nome"
+                android:background="@null"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textAlignment="center" />
+            -->
+
+            <WebView
+                android:id="@+id/webView_webPayment"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tableRow2" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_footer_mobile"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

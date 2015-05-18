@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivOfferPhoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-8dp"
+        android:alpha="0.3"
+        android:src="@drawable/triangulo" />
+
+    <ImageView
+        android:id="@+id/ivOfferPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/examplo_img_horizontal" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivOfferPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ivOfferTitle"
+        android:alpha="0.4"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/ivOfferTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivOfferPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:text="Ipad Lorem Ipsum"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvOfferNoDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivOfferTitle"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="2dp"
+        android:text="De R$ 99,99"
+        android:textColor="#808080"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvOfferValueDiscounted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferNoDiscount"
+        android:layout_below="@+id/tvOfferNoDiscount"
+        android:layout_marginTop="1dp"
+        android:text="Por R$ 99,99"
+        android:textColor="#808080"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvOfferValueParcels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferValueDiscounted"
+        android:layout_below="@+id/tvOfferValueDiscounted"
+        android:text="12x de R$ 00,00"
+        android:textColor="#808080"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/ivOfferShareButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvOfferValueParcels"
+        android:layout_alignTop="@+id/tvOfferNoDiscount"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/adventa_icon_share_on" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivOfferShareButton"
+        android:layout_alignTop="@+id/ivOfferShareButton"
+        android:layout_toRightOf="@+id/ivOfferShareButton"
+        android:src="@drawable/adventa_icon_compra_on" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnCompDetailAssinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#f37165"
+        android:text="✓ Assinar"
+        android:textColor="#ffffff" />
+
+    <GridView
+        android:id="@+id/gridbtnCompDetailOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCompDetailAssinar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="2" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/tvCompDetailWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Essa empresa ainda não possui \n ofertas cadastradas no ADVENTA."
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

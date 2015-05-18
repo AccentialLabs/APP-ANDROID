@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imgCompanyLogo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgCompanyLogo"
+        android:layout_marginTop="10dp" >
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvCompanyNAme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgCompanyLogo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/imgCompanyLogo"
+        android:text="TextView"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

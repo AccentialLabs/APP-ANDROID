@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- include header -->
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <!-- corpo -->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="#808080" />
+
+    <TextView
+        android:id="@+id/tvMetricsTitleSuper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/view1"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Selecione o Tamanho..."
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#808080" />
+
+    <TextView
+        android:id="@+id/tvMetricsTitleInfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Selecione a cor..."
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#f37165"
+        android:text="Confirmar"
+        android:textColor="#ffffff" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/btnConfirmar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:background="#dcdcdc" >
+    </TableRow>
+
+    <GridView
+        android:id="@+id/firstGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:gravity="center"
+        android:listSelector="#f37165"
+        android:numColumns="5"
+        android:padding="5dp"
+        android:textAlignment="center" >
+    </GridView>
+
+    <GridView
+        android:id="@+id/secondGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:gravity="center"
+        android:listSelector="#f37165"
+        android:numColumns="5"
+        android:padding="5dp"
+        android:textAlignment="center" >
+    </GridView>
+
+</RelativeLayout>

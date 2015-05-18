@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp" >
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="650dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/view1"
+        android:background="#dcdcdc" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="162dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignTop="@+id/view2"
+        android:background="#FFFAF0" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="162dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/view3"
+        android:background="#FFFAF0" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="162dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/View01"
+        android:background="#FFFAF0" />
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="162dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/View02"
+        android:background="#FFFAF0" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/view3"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/View01"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/View03"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/diviser_v" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignTop="@+id/view2" >
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bg_dadosempresa" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageView_ComprasDetailImage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/tableRow3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Vital Esthetic"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_ComprasDetailCompanyName"
+        android:layout_below="@+id/textView_ComprasDetailCompanyName"
+        android:text="11 2345-6789"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignLeft="@+id/textView_ComprasDetailCompanyTel"
+        android:layout_marginBottom="15dp"
+        android:text="Ver email"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/bg_dadosentrega" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="Prazo de entrega"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_ComprasDetailCompanyName"
+        android:layout_alignBottom="@+id/textView_ComprasDetailCompanyName"
+        android:layout_alignLeft="@+id/tableRow4"
+        android:layout_marginLeft="5dp"
+        android:text="Previsão de até"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyPrazo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignTop="@+id/textView_ComprasDetailCompanyTel"
+        android:text="2 dias úteis"
+        android:textSize="12dp" />
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/imageView6"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bg_dadosvalores" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:text="Forma de pagamento"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyFormaPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/tableRow7"
+        android:layout_marginLeft="5dp"
+        android:text="Crédito - American Express"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_ComprasDetailCompanyNumParcelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_ComprasDetailCompanyFormaPagamento"
+        android:layout_alignTop="@+id/textView_ComprasDetailCompanyPrazo"
+        android:text="em 3x"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_ComprasDetailCompanyNumParcelas"
+        android:layout_below="@+id/textView_ComprasDetailCompanyNumParcelas"
+        android:text="com juros de 1%"
+        android:textSize="12dp" />
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_toRightOf="@+id/imageView7"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/bg_dadosmoip" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Sistema de pagamento"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_ComprasDetailCompanyFormaPagamento"
+        android:layout_alignBottom="@+id/textView_ComprasDetailCompanyFormaPagamento"
+        android:layout_alignLeft="@+id/tableRow8"
+        android:layout_marginLeft="5dp"
+        android:text="Código"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_ComprasDeatilCompanyCodMoip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignTop="@+id/textView_ComprasDetailCompanyNumParcelas"
+        android:text="9999"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_toRightOf="@+id/textView_ComprasDetailCompanyName"
+        android:src="@drawable/bg_emailempresa" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_toRightOf="@+id/textView_ComprasDetailCompanyTel"
+        android:text="atendimento@vitalesthetic.com.br"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+</RelativeLayout>

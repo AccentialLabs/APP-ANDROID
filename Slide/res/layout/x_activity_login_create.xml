@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adventa_background_resize"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/adventa_logo" />
+
+    <EditText
+        android:id="@+id/etCreateConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCreatePass"
+        android:layout_alignRight="@+id/etCreatePass"
+        android:layout_below="@+id/etCreatePass"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Confirmação de Senha"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/pbCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreateEmail"
+        android:layout_below="@+id/etCreateEmail"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreatePass"
+        android:layout_below="@+id/etCreatePass"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreateConfirm"
+        android:layout_below="@+id/etCreateConfirm"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etCreateName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/etCreateName"
+        android:layout_alignLeft="@+id/etCreateName"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etCreateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCreateName"
+        android:layout_alignRight="@+id/etCreateName"
+        android:layout_below="@+id/etCreateName"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etCreatePass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableRow2"
+        android:layout_below="@+id/tableRow2"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCreateCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnCreateUser"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/table_border"
+        android:text="Voltar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnCreateUser"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnCreateCancel"
+        android:layout_alignLeft="@+id/tableRow4"
+        android:layout_marginBottom="5dp"
+        android:background="#3399cc"
+        android:text="Cadastrar"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/ivCadErrorr"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btnCreateUser"
+        android:layout_alignLeft="@+id/btnCreateUser"
+        android:src="@drawable/adventa_error_login"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCadError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivCadErrorr"
+        android:layout_alignLeft="@+id/ivCadErrorr"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="83dp"
+        android:text="As Senhas não são Iguais"
+        android:textColor="#f37165"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slide"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+    <!-- ACTIVITY PRINCIPAL  com.example.slide.AdvetaInitialActivity" -->
+    <!--
+	  IMPORTANT: If you change the package name of this sample app, change
+	  "com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" in the
+	  lines below to match the new package name.
+    -->
+    <permission
+        android:name="com.example.slide.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.slide.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/adventa_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.slide.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- principal -->
+        <activity
+            android:name="com.example.slide.CompaniesDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OfferDetailMetricActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.AdvetaInitialActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.PhotoZoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.NotificationRespActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OffersActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.FBActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.CheckoutFinalizeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.TermsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.slide.AdventaActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.InvitatiosActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OffersListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.UserActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.UserAddressActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OfferFilterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.CreateUserActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.RecoveryPassActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.WishlistActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OfferDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.FilteredOfferActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.CheckoutActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.OffersDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.SignaturesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.ComprasActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.CategoriesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.slide.WishHomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service android:name="com.accential.trueone.service.OffersPagesService" />
+        <service android:name="com.accential.trueone.service.OffersPagesPrincipalService" />
+        <service android:name="com.accential.trueone.service.BackgroundNotificationService" />
+        <service android:name="com.accential.trueone.service.CommentService" />
+        <service android:name="com.accential.trueone.service.CompsOfferService" />
+        <service android:name="com.accential.trueone.service.CompaniesOfferProfileService" />
+        <service android:name="com.accential.trueone.service.CompaniesOfferService" />
+        <service android:name="com.accential.trueone.service.SignCompanyService" />
+        <service android:name="com.accential.trueone.service.CheckInvitationsService" />
+        <service android:name="com.accential.trueone.service.InvitationsIntentService" />
+        <service android:name="com.accential.trueone.service.OfferFilterService" />
+        <service android:name="com.accential.trueone.service.OffersWishlistService" />
+        <service android:name="com.accential.trueone.service.OfferFilterSearchService" />
+        <service android:name="com.accential.trueone.service.CheckoutService" />
+        <service android:name="com.accential.trueone.service.ShippingValueService" />
+        <service android:name="com.accential.trueone.service.CreateUserService" />
+        <service android:name="com.accential.trueone.service.ComprasService" />
+        <service android:name="com.accential.trueone.service.CategoriesService" />
+        <service android:name="com.accential.trueone.service.SignaturesService" />
+        <service android:name="com.accential.trueone.service.SignaturesSearchService" />
+        <service android:name="com.accential.trueone.service.FirstFragmentService" />
+        <service android:name="com.accential.trueone.service.WishlistService" />
+        <service android:name="com.accential.trueone.service.WishHomeService" />
+        <service android:name="com.accential.trueone.service.OffersCommentService" />
+        <service android:name="com.accential.trueone.service.OfferDetailService" />
+        <service android:name="com.accential.trueone.service.OffersMyProfileService" />
+        <service android:name="com.accential.trueone.service.AdventaPrincipalService" />
+        <service android:name="com.accential.trueone.service.CompaniesDetailService" />
+
+        <!-- Login facebook -->
+        <activity
+            android:name="com.parse.integratingfacebooktutorial.UserDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <!-- NOTIFICATION PARSE -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+				  IMPORTANT: If you change the package name of this sample app,
+				  change "com.parse.tutorials.pushnotifications" in the lines
+				  below to match the new package name.
+                -->
+                <category android:name="com.example.slide" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

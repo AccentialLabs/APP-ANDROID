@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <!-- header -->
+
+    <include
+        android:id="@+id/header"
+        android:layout_height="100dp"
+        layout="@layout/include_tablet_header" />
+
+    <!-- body -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_wishlist"
+        android:gravity="center"
+        android:textAlignment="center" >
+
+        <TextView
+            android:id="@+id/textView_qtdNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XX Notificações"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/tableRow1"
+        android:layout_below="@+id/tableRow1"
+        android:background="#fff" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignTop="@+id/view1" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView_invitation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_convite" />
+
+            <TextView
+                android:id="@+id/textView_pendingInvitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Você têm XX convites pendentes."
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView_newsOffer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_aviso" />
+
+            <TextView
+                android:id="@+id/textView_newsOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Você tem XX novas ofertas."
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+    <!-- footer -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_tablet_footer"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="650dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_top_title" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Titulo da Oferta Aqui"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_marginTop="470dp" >
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="fill_parent"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:src="@drawable/bg_tab_on" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/bg_tab_off" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/bg_tab_off" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/bg_tab_off" />
+    </TableRow>
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/imageView_imagemOfferDetail"
+        android:layout_width="216dp"
+        android:layout_height="330dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/border"
+        android:src="@drawable/examplo_img_vertical" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="434dp"
+        android:layout_height="200dp"
+        android:layout_alignRight="@+id/view1"
+        android:layout_alignTop="@+id/imageView_imagemOfferDetail"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="434dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view3"
+        android:src="@drawable/diviser_h" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_alignRight="@+id/view1"
+        android:layout_alignTop="@+id/view3"
+        android:background="#000" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignTop="@+id/view3"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginLeft="-5dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:src="@drawable/diviser_v" />
+
+    <TextView
+        android:id="@+id/textView_descricaoOfferDetail"
+        android:layout_width="245dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignTop="@+id/view3"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:text="Descrição" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="186dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="-8dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_alignLeft="@+id/view4"
+        android:src="@drawable/diviser_h" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="186dp"
+        android:layout_height="55dp"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view4"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view5"
+        android:layout_alignLeft="@+id/view5"
+        android:src="@drawable/diviser_h" />
+
+    <ImageView
+        android:id="@+id/imageView_btnComprar"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view5"
+        android:layout_below="@+id/view5"
+        android:layout_marginTop="-6dp"
+        android:src="@drawable/bt_comprar_vertical" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignLeft="@+id/imageView_btnComprar"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/textView_precoAntigoOfferDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view4"
+        android:layout_alignTop="@+id/view3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="de R$ 1799,00"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_precoNovoOfferDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignRight="@+id/view1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:text="R$ 50.000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_precoNovoOfferDetail"
+        android:layout_alignBottom="@+id/textView_precoNovoOfferDetail"
+        android:layout_toLeftOf="@+id/textView_precoNovoOfferDetail"
+        android:text="por"
+        android:textColor="#000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view5"
+        android:layout_alignTop="@+id/view5"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="17dp"
+        android:text="em até"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textView_valorParcelasOfferDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view5"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="24x"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view5"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/textView_valorParcelasOfferDetail"
+        android:text="de"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textView_valorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view5"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="R$ 99,99"
+        android:textSize="15dp" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView_btnComprar"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/star_color" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/star_color" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/star_color" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/star_gray" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray" />
+
+        <TextView
+            android:id="@+id/textView_countStarts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:text="+ 100"
+            android:textColor="#FF8C00" />
+    </TableRow>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="434dp"
+        android:layout_height="126dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView_textoValidade"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/imageView_imagemOfferDetail"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Válido até 25/11/2013"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textView_numeroEstoque"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/textView_textoValidade"
+        android:layout_marginLeft="-25dp"
+        android:gravity="center"
+        android:text="Faltando 9 em estoque!"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_below="@+id/view7"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bt_enviaramigo" />
+
+    <ImageView
+        android:id="@+id/imageView_btCompartilharOfferDetail"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_below="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/bt_compartilhar" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@+id/view1"
+        android:layout_alignTop="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border_2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView_imagemCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <!-- TEXTOS DO MENUS -->
+
+    <TextView
+        android:id="@+id/textView_textoProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="493dp"
+        android:text="PRODUTO"
+        android:textColor="#DAA520"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView_textoInformacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="385dp"
+        android:layout_marginTop="493dp"
+        android:text="INFORMAÇÕES"
+        android:textColor="#DAA520"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView_textoEspecificacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="540dp"
+        android:layout_marginTop="493dp"
+        android:text="ESPECIFICACÕES"
+        android:textColor="#DAA520"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView_textoOpinioes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="720dp"
+        android:layout_marginTop="493dp"
+        android:text="OPINIÕES"
+        android:textColor="#DAA520"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/view_ladoEsquerdoTblCor"
+        android:layout_width="30dp"
+        android:layout_height="128dp"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_alignTop="@+id/view7"
+        android:layout_marginTop="-2dp"
+        android:background="#dcdcdc" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="30dp"
+        android:layout_height="128dp"
+        android:layout_above="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_alignRight="@+id/view1"
+        android:layout_marginTop="-2dp"
+        android:background="#dcdcdc" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="434dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_below="@+id/view7"
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/diviser_h" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_above="@+id/imageView_enviaAmigoOfferDet"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@+id/view_ladoEsquerdoTblCor"
+        android:src="@drawable/diviser_v" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_alignTop="@+id/view8"
+        android:layout_marginRight="-3dp"
+        android:layout_toLeftOf="@+id/view8"
+        android:src="@drawable/diviser_v" />
+
+    <!-- TABELA DE CORES -->
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView17"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/imageView16" >
+
+        <View
+            android:id="@+id/view_cor1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#98FB98" />
+
+        <View
+            android:id="@+id/view_cor2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#6495ED" />
+
+        <View
+            android:id="@+id/view_cor3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#7B68EE" />
+
+        <View
+            android:id="@+id/view_cor4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#CAE1FF" />
+
+        <View
+            android:id="@+id/view_cor5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#FF8C00" />
+
+        <View
+            android:id="@+id/view_cor6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#FFA500" />
+
+        <View
+            android:id="@+id/view_cor7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#FFA07A" />
+
+        <View
+            android:id="@+id/view_cor8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#FA8072" />
+
+        <View
+            android:id="@+id/view_cor9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#E9967A" />
+
+        <View
+            android:id="@+id/view_cor10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#A52A2A" />
+
+        <View
+            android:id="@+id/view_cor11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#F4A460" />
+
+        <View
+            android:id="@+id/view_cor12"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#43CD80" />
+
+        <View
+            android:id="@+id/view_cor13"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#2E8B57" />
+
+        <View
+            android:id="@+id/view_cor14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:background="#9AFF9A" />
+    </TableRow>
+
+    <com.accential.trueone.utils.VerticalTextView
+        android:id="@+id/textView_verticalTamanho"
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_textoInformacoes"
+        android:layout_alignTop="@+id/view7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|right"
+        android:text="Tamanho"
+        android:textSize="14dp" />
+
+    <com.accential.trueone.utils.VerticalTextView
+        android:id="@+id/textView_verticalConfiguracao"
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view8"
+        android:layout_toRightOf="@+id/tableRow4"
+        android:gravity="bottom|right"
+        android:text="Configuração"
+        android:textSize="14dp" />
+
+    <com.accential.trueone.utils.VerticalTextView
+        style="@style/verticalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView16"
+        android:layout_marginTop="310dp"
+        android:gravity="bottom|right"
+        android:text="Cor"
+        android:textSize="14dp" />
+
+</RelativeLayout>

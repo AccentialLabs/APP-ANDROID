@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_height="55dp"
+        layout="@layout/activity_header_mobile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_detailsWish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wishlistTitle"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wishlistButton" 
+                    android:layout_weight="1"
+                    android:onClick="createWish"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView_MiniDetailsWish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlistDesc"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <!--
+           <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textAlignment="center" >
+
+        <ListView
+            android:id="@+id/listWish"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/textViewWish_NotFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <include
+            android:layout_height="55dp"
+            layout="@layout/include_tablet_footer" />
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

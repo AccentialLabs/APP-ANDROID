@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <Button
+        android:id="@+id/btnSignatures"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/assinaturas_off" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Atualizar"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pbAdventaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnWish"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/wishlist_off" />
+
+    <Button
+        android:id="@+id/btnCompras"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/compras_off" />
+
+    <!--
+         <com.loopj.android.image.SmartImageView
+        android:id="@+id/imgUserPhoto"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvFragFirst"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvFragFirst"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/adiciona_qtd" />
+    -->
+
+    <GridView
+        android:id="@+id/gridOffersAdventa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignatures"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginBottom="10dp"
+        android:numColumns="2" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/pbPrincipalAtualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCompras"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPrincipalAtualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gridOffersAdventa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Atualizando lista"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- rodape -->
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/x_include_footer"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/include1"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Nome do Produto"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#f37165"
+        android:textColorHint="#cccccc"
+        android:textSize="16sp"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/btnSignatures"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.4"
+        android:background="@drawable/iconfilter" />
+
+    <ImageView
+        android:id="@+id/btnSearchOffer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/btnWish"
+        android:src="@drawable/adventa_icon_lupa_on" />
+
+</RelativeLayout>

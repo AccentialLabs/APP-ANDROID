@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/textView_titleCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tableRow1"
+        android:maxLines="2"
+        android:text="Nome da Empresa"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_titleCompany"
+        android:layout_below="@+id/textView_titleCompany"
+        android:text="Assine e receba nossas ofertas"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_titleCompany"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="clickPositive"
+            android:src="@drawable/bt_add" />
+
+        <ImageView
+            android:id="@+id/imageView_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="clickNegative"
+            android:src="@drawable/bt_delete" />
+    </TableRow>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="290dp"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F5DEB3" />
+
+</RelativeLayout>

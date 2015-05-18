@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/adventa_background_resize" >
+
+    <ImageView
+        android:id="@+id/imageView100"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:paddingTop="100dp"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="450dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_alignTop="@+id/view1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/adventa_logo" />
+
+    <EditText
+        android:id="@+id/etCreateName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreateName"
+        android:layout_alignRight="@+id/etCreateName"
+        android:layout_below="@+id/etCreateName"
+        android:background="#fff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etCreateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCreateName"
+        android:layout_alignRight="@+id/etCreateName"
+        android:layout_below="@+id/etCreateName"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" >
+    </EditText>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreateEmail"
+        android:layout_alignRight="@+id/etCreateEmail"
+        android:layout_below="@+id/etCreateEmail"
+        android:background="#fff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etCreatePass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableRow2"
+        android:layout_alignRight="@+id/tableRow2"
+        android:layout_below="@+id/tableRow2"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreatePass"
+        android:layout_alignRight="@+id/etCreatePass"
+        android:layout_below="@+id/etCreatePass"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etCreateConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCreatePass"
+        android:layout_alignRight="@+id/etCreatePass"
+        android:layout_below="@+id/etCreatePass"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Confirmação de Senha"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etCreateConfirm"
+        android:layout_alignRight="@+id/etCreateConfirm"
+        android:layout_below="@+id/etCreateConfirm"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/pbCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnCreateCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignLeft="@+id/btnCreateUser"
+        android:layout_alignRight="@+id/btnCreateUser"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/table_border"
+        android:text="Voltar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnCreateUser"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnCreateCancel"
+        android:layout_alignLeft="@+id/etCreateConfirm"
+        android:layout_alignRight="@+id/tableRow4"
+        android:layout_marginBottom="10dp"
+        android:background="#3399cc"
+        android:text="Cadastrar"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvCadError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pbCreateUser"
+        android:layout_centerHorizontal="true"
+        android:text="As Senhas não são Iguais"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivCadErrorr"
+        android:layout_width="340dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/tvCadError"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/adventa_error_login" />
+
+</RelativeLayout>

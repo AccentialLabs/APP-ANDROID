@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/bg_menu"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageFooterInvitations"
+                android:layout_width="20dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/dashboard_on" />
+
+            <ImageView
+                android:id="@+id/imageFooterDashboard"
+                android:layout_width="20dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ofertas_off" />
+
+            <ImageView
+                android:id="@+id/imageFooterCompras"
+                android:layout_width="20dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageFooterAssinaturas"
+                android:layout_width="20dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageFooterWish"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewFooterInvitations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Dashboard"
+                android:textColor="#D97500"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/textViewFooterDash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Ofertas"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/textViewFooterCompras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Compras"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/textViewFooterAssinaturas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Assinaturas"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/textViewFooterWish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Wishlist"
+                android:textSize="9dp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

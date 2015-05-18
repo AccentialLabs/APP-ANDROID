@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:background="#f37165" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Cadastre seu Endereço"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etAddAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddAddressLabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etAddAddressLabel"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName"
+        android:lines="2"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etAddAddressNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddAddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etAddAddressDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etAddAddress"
+        android:layout_below="@+id/etAddAddress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/etAddAddressNumber"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Bairro"
+        android:inputType="textPersonName"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textColor="#808080"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etAddAddressCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddAddressNumber"
+        android:layout_below="@+id/etAddAddressNumber"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Cidade"
+        android:inputType="textPersonName"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spAddAddressUF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etAddAddressCity"
+        android:layout_alignTop="@+id/etAddAddressCity"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/etAddAddressCity" />
+
+    <EditText
+        android:id="@+id/etAddAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddAddressNumber"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etAddAdressCEP"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Nome do Local"
+        android:inputType="textPersonName"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnAddAddressCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/btnAddAddressSave"
+        android:layout_alignRight="@+id/btnAddAddressSave"
+        android:layout_below="@+id/btnAddAddressSave"
+        android:layout_marginTop="5dp"
+        android:background="#808080"
+        android:text="Cancelar"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/etAddAddressComplement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddAddressCity"
+        android:layout_alignRight="@+id/etAddAddressDistrict"
+        android:layout_below="@+id/etAddAddressCity"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Complemento"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAddAddressSave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/etAddAddressComplement"
+        android:layout_alignRight="@+id/etAddAddressDistrict"
+        android:layout_below="@+id/etAddAddressComplement"
+        android:layout_marginTop="10dp"
+        android:background="#3399cc"
+        android:text="Cadastrar"
+        android:textColor="#ffffff" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@+id/etAddAdressCEP"
+        android:layout_below="@+id/etAddAdressCEP"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etAddAdressCEP"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddAddressLabel"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="number"
+        android:maxLength="9"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/etAddAddress"
+        android:layout_alignLeft="@+id/etAddAddressLabel"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etAddAddress"
+        android:layout_below="@+id/etAddAddress"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etAddAddressNumber"
+        android:layout_below="@+id/etAddAddressNumber"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etAddAddressCity"
+        android:layout_below="@+id/etAddAddressCity"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etAddAddressComplement"
+        android:layout_below="@+id/etAddAddressComplement"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnAddAddressCancel"
+        android:layout_marginTop="5dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+</RelativeLayout>

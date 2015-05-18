@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/OfferFullPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/OfferFullPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/OfferFullTitle"
+        android:alpha="0.5"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/OfferFullTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/OfferFullPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Offer title"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/OfferFullOriginalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/OfferFullPhoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="De R$00,00"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/OfferFullNewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/OfferFullOriginalValue"
+        android:layout_below="@+id/OfferFullOriginalValue"
+        android:text="Por R$00,00"
+        android:textColor="#808080"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/OfferFullParcelValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/OfferFullNewValue"
+        android:layout_below="@+id/OfferFullNewValue"
+        android:text="12x de R$00,00"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080"
+        android:textSize="11sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:alpha="0.1"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/OfferFullOriginalValue"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/adventa_icon_compra_on"
+        android:onClick="comprar" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/OfferFullOriginalValue"
+        android:layout_toLeftOf="@+id/button2"
+        android:background="@drawable/adventa_icon_share_on"
+        android:onClick="share" />
+
+    <ImageView
+        android:id="@+id/imgDesconto"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/adventa_icon_desconto"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/OfferFullDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgDesconto"
+        android:layout_alignLeft="@+id/imgDesconto"
+        android:layout_alignRight="@+id/imgDesconto"
+        android:layout_alignTop="@+id/imgDesconto"
+        android:gravity="center"
+        android:text="30%\noff"
+        android:textColor="#fff"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

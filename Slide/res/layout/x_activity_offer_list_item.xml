@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ivOfferPhoto"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivOfferPhoto"
+        android:background="#808080" />
+
+    <TextView
+        android:id="@+id/tvOfferTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivOfferPhoto"
+        android:maxLength="15"
+        android:paddingRight="5dp"
+        android:text="NONONONONONONON"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvOfferValOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferTitle"
+        android:layout_below="@+id/tvOfferTitle"
+        android:layout_marginTop="3dp"
+        android:alpha="0.7"
+        android:text="De R$99,99"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvOfferValComDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferValOriginal"
+        android:layout_below="@+id/tvOfferValOriginal"
+        android:text="Por R$999,99"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvOfferParcel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvOfferValComDesc"
+        android:layout_below="@+id/tvOfferValComDesc"
+        android:alpha="0.7"
+        android:text="12x de R$99,99"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivOfferPhoto"
+        android:layout_marginTop="3dp"
+        android:alpha="0.2"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/adventa_icon_share_off"
+        android:onClick="share" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/tableRow1"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@drawable/adventa_icon_compra_off"
+        android:onClick="comprar" />
+
+    <ImageView
+        android:id="@+id/ivDesconto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/tvOfferTitle"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/adventa_icon_desconto" />
+
+    <TextView
+        android:id="@+id/tvValDesconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvOfferValOriginal"
+        android:layout_alignBottom="@+id/tvOfferValOriginal"
+        android:layout_alignLeft="@+id/ivDesconto"
+        android:layout_alignRight="@+id/ivDesconto"
+        android:gravity="center"
+        android:text="10%\noff"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

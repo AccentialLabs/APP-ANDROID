@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="650dp"
+    android:layout_height="230dp"
+    android:background="#dcdcdc" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- OFERTA 1 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="216dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-17dp"
+                    android:src="@drawable/bg_box_offer" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imageView_photoOferta1"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/accential" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView_btnComprar"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-22dp"
+                    android:text="Por R$50,00"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/imageView_photoOferta1"
+                    android:layout_marginTop="3dp"
+                    android:text="de R$1799,00"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_btnComprar"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:src="@drawable/bt_comprar" />
+
+                <TextView
+                    android:id="@+id/textView_tituloOferta1"
+                    style="bold"
+                    android:layout_width="214dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Oferta 1"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_photoOferta1"
+                    android:layout_width="213dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView_tituloOferta1"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/ipadminireview" />
+
+                <ImageView
+                    android:id="@+id/imageView_moreInfo"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/imageView_photoOferta1"
+                    android:layout_alignRight="@+id/imageView_photoOferta1"
+                    android:src="@drawable/bt_maisinfos" />
+
+                <ImageView
+                    android:id="@+id/imageView_iconNovo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView_photoOferta1"
+                    android:layout_alignTop="@+id/imageView_photoOferta1"
+                    android:src="@drawable/icon_novo_p" />
+
+                <TextView
+                    android:id="@+id/textView3_validadeOferta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView_btnComprar"
+                    android:layout_centerHorizontal="true"
+                    android:text="TextView"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <!-- OFERTA 2 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="216dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-17dp"
+                    android:src="@drawable/bg_box_offer" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imageView_photoOferta2"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/accential" />
+
+                <ImageView
+                    android:id="@+id/imageView_photoOferta2"
+                    android:layout_width="214dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView_tituloOferta2"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/ipadminireview" />
+
+                <TextView
+                    android:id="@+id/textView_tituloOferta2"
+                    style="bold"
+                    android:layout_width="214dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Oferta2"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_iconNovo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/imageView_photoOferta2"
+                    android:src="@drawable/icon_novo_p" />
+
+                <ImageView
+                    android:id="@+id/imageView_moreInfo"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/imageView_photoOferta2"
+                    android:layout_alignRight="@+id/imageView_photoOferta2"
+                    android:src="@drawable/bt_maisinfos" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_marginTop="-17dp"
+                    android:text="Por R$50,00"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="133dp"
+                    android:layout_toLeftOf="@+id/imageView_moreInfo"
+                    android:text="de R$1799,00"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_btnComprar"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/imageView_photoOferta2"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="-11dp"
+                    android:src="@drawable/bt_comprar" />
+
+                <TextView
+                    android:id="@+id/textView_validadeOferta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:text="TextView"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <!-- OFERTA 3 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="216dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="-17dp"
+                    android:src="@drawable/bg_box_offer" />
+
+                <ImageView
+                    android:id="@+id/imageView_btnComprar"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/imageView_photoOferta3"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="153dp"
+                    android:src="@drawable/bt_comprar" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginLeft="120dp"
+                    android:text="Por R$50,00"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_tituloOferta3"
+                    style="bold"
+                    android:layout_width="214dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Oferta 3"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_photoOferta3"
+                    android:layout_width="214dp"
+                    android:layout_height="105dp"
+                    android:layout_below="@+id/textView_tituloOferta3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/ipadminireview" />
+
+                <ImageView
+                    android:id="@+id/imageView_iconNovo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/imageView_photoOferta3"
+                    android:src="@drawable/icon_novo_p" />
+
+                <ImageView
+                    android:id="@+id/imageView_moreInfo"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/imageView_photoOferta3"
+                    android:layout_alignRight="@+id/imageView_photoOferta3"
+                    android:src="@drawable/bt_maisinfos" />
+
+                <TextView
+                    android:id="@+id/textView_validadeOferta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView_btnComprar"
+                    android:layout_centerHorizontal="true"
+                    android:text="TextView"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/imageView_photoOferta3"
+                    android:layout_marginTop="3dp"
+                    android:text="de R$1799,00"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imageView_photoOferta3"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/accential" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

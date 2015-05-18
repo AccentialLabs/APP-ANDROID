@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ivOfferPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/branco" />
+
+    <TextView
+        android:id="@+id/tvPrecoOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivOfferPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/ivOfferPhoto"
+        android:layout_marginLeft="3dp"
+        android:alpha="0.5"
+        android:background="#000"
+        android:gravity="right"
+        android:padding="5dp"
+        android:paddingRight="10dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

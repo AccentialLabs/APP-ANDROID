@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            layout="@layout/include_tablet_header" />
+
+        <TableRow
+            android:id="@+id/tableRow_offerNotFound"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="#dcdcdc"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewOffersNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offerNotFound"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="650dp"
+            android:layout_height="500dp"
+            android:layout_below="@+id/header" />
+
+        <GridView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="800dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:columnWidth="250dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+        <WebView
+            android:id="@+id/webViewLoad"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <include
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/include_tablet_footer" />
+
+</LinearLayout>

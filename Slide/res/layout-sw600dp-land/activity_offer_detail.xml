@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout" >
+
+    <include
+        android:layout_height="100dp"
+        layout="@layout/include_tablet_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="650dp"
+                android:layout_height="466dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff" />
+
+            <!-- TABELA DE MENU -->
+
+
+            <!--
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_marginTop="470dp" >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="-4dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bg_tab_on" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bg_tab_off" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bg_tab_off" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bg_tab_off" />
+            </TableRow>
+            -->
+
+
+            <!-- FIM TABELA DE MENU -->
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/header"
+                android:src="@drawable/bg_top_title" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="Titulo da Oferta Aqui"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/imageView_imagemOfferDetail"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/border"
+                android:src="@drawable/examplo_img_horizontal" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="290dp"
+                android:layout_height="210dp"
+                android:layout_alignTop="@+id/imageView_imagemOfferDetail"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/imageView_imagemOfferDetail" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignTop="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView_precoAntigoOfferDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_below="@+id/view3"
+                android:layout_marginLeft="10dp"
+                android:text="de R$ 1799,00"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_precoAntigoOfferDetail"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="255dp"
+                android:text="por"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_below="@+id/view3"
+                android:layout_marginTop="-13dp"
+                android:src="@drawable/diviser_h" />
+
+            <!--
+            <ImageView
+                android:id="@+id/imageView_btnComprar"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/view1"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="-6dp"
+                android:src="@drawable/bt_comprar" />
+            -->
+
+            <TextView
+                android:id="@+id/imageView_btnComprar"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/view1"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="-6dp"
+                android:background="@drawable/bg_btcomprar"
+                android:gravity="center"
+                android:text="COMPRAR"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_descricaoOfferDetail"
+                android:layout_width="290dp"
+                android:layout_height="140dp"
+                android:layout_alignTop="@+id/imageView_imagemOfferDetail"
+                android:layout_toRightOf="@+id/imageView_imagemOfferDetail"
+                android:gravity="center"
+                android:text="Descrição"
+                android:textSize="11dp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_alignRight="@+id/view1"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="-12dp" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="173dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@+id/imageView_btnComprar"
+                android:layout_below="@+id/imageView_btnComprar"
+                android:layout_marginTop="-4dp"
+                android:background="#ffffff" />
+
+            <!-- TABELA ESTRELAS -->
+
+
+            <!-- FIM TABELA ESTRELAS -->
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="175dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/view4"
+                android:layout_alignLeft="@+id/view5"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_color" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_color" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_color" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_gray" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_gray" />
+
+                <TextView
+                    android:id="@+id/textView_countStarts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="+ 100"
+                    android:textColor="#FF8C00" />
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_alignRight="@+id/imageView_imagemOfferDetail"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="-18dp"
+                android:src="@drawable/diviser_v" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_below="@+id/imageView_btnComprar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="em até"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textView_valorParcelasOfferDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="24x"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_valorParcelasOfferDetail"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/textView_valorParcelasOfferDetail"
+                android:text="de"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textView_valorTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view4"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="3dp"
+                android:text="R$ 99,99"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageView_btCompartilharOfferDetail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/bt_compartilhar" />
+
+            <ImageView
+                android:id="@+id/imageView_enviaAmigoOfferDet"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView_btCompartilharOfferDetail"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imageView_btCompartilharOfferDetail"
+                android:src="@drawable/bt_enviaramigo" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="-14dp"
+                android:src="@drawable/diviser_h" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignLeft="@+id/imageView4"
+                android:src="@drawable/diviser_h" />
+
+            <TextView
+                android:id="@+id/textView_precoNovoOfferDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignLeft="@+id/textView_valorTotal"
+                android:text="R$ 50.000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/imageView_btCompartilharOfferDetail"
+                android:layout_below="@+id/imageView_btCompartilharOfferDetail"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_2"
+                android:gravity="center" >
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/imageView_imagemCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView_textoValidade"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow3"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/imageView_enviaAmigoOfferDet"
+                android:gravity="center"
+                android:text="Válido até 25/11/2013"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textView_numeroEstoque"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/textView_textoValidade"
+                android:layout_marginLeft="-15dp"
+                android:gravity="center"
+                android:text="Faltando 9 em estoque!"
+                android:textSize="11dp" />
+
+            <!-- TABELA DE CORES -->
+
+            <include
+                android:id="@+id/include1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView_enviaAmigoOfferDet"
+                android:layout_alignTop="@+id/tableRow3"
+                layout="@layout/activity_table_cores" />
+
+            <!-- FIM DA TABELA DE CORES -->
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_alignLeft="@+id/imageView_btnComprar"
+                android:layout_alignTop="@+id/textView_valorParcelasOfferDetail"
+                android:layout_marginTop="-3dp"
+                android:src="@drawable/diviser_v" />
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_marginTop="490dp"
+                android:gravity="center" >
+
+                <!-- TEXTOS DO MENU -->
+
+                <TextView
+                    android:id="@+id/textView_textoProduto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_on"
+                    android:gravity="center"
+                    android:text="PRODUTO"
+                    android:textColor="#DAA520"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView_textoInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_off"
+                    android:gravity="center"
+                    android:text="INFORMAÇÕES"
+                    android:textColor="#DAA520"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView_textoEspecificacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_off"
+                    android:gravity="center"
+                    android:text="ESPECIFICACÕES"
+                    android:textColor="#DAA520"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView_textoOpinioes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_off"
+                    android:gravity="center"
+                    android:text="OPINIÕES"
+                    android:textColor="#DAA520"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView_offerShowSpecification"
+                android:layout_width="630dp"
+                android:layout_height="500dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_tablet_footer"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

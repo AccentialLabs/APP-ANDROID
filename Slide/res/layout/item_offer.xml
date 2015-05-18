@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_itemOffer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_itemOfferValidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offerItemDateValidate"
+                android:textSize="10sp"
+                android:textColor="#D2691E" />
+
+            <!-- TEXTVIEW RECEBE DATA -->
+            <TextView
+                android:id="@+id/textView_itemDateValidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D2691E"
+                android:textSize="10sp" />
+            
+        </TableRow>
+
+        <!-- <ProgressBar
+            android:id="@+id/progressBar_itemOffer"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /> -->
+
+        <ImageView
+            android:id="@+id/imageView_itemOffer"
+            android:layout_width="200dp"
+            android:layout_height="150dp" />
+
+        <!-- LINEAR QUE RECEBE WEBVIEW -->
+
+
+        <!--
+               <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" > 
+
+            <WebView
+                android:id="@+id/webView_HTMLImage"
+                android:layout_width="250dp"
+                android:layout_height="200dp" />
+            </LinearLayout>
+        -->
+
+        <TextView
+            android:id="@+id/textView_itemOffer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

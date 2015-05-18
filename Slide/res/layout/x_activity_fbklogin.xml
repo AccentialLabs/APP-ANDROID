@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adventa_background_resize"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/adventa_logo" />
+
+    <!--
+         <TextView
+        android:id="@+id/tvStatusLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff" />
+    -->
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" >
+    </EditText>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.7"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.7"
+        android:background="#ffffff" >
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvUserLoginWarning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-35dp"
+        android:layout_marginTop="10dp"
+        android:background="#66ffffff"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Algum dado está incorreto, verifique e tente novamente!"
+        android:textColor="#f37165"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- <com.facebook.widget.LoginButton -->
+
+    <Button
+        android:id="@+id/fb_login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btnLogar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#3399cc"
+        android:text="Entrar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnLoginCreateNew"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.6"
+        android:background="#66FFFFFF"
+        android:text="Cadastrar"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnLoginRecovPass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/table_border"
+        android:text="Esqueci minha senha"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvLoginTermsConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Termos de Uso - Política de Privacidade"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp" />
+
+    <!--
+    <Button
+        android:id="@+id/update_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post" />
+    -->
+
+</LinearLayout>

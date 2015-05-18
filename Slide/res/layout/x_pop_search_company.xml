@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnSearchCompDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#f37165"
+        android:text="Detalhes da empresa"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSearchCompSign"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSearchCompDetails"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#3399cc"
+        android:text="Assinar Empresa"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSearchCompVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSearchCompSign"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#664d4d4d"
+        android:text="Voltar"
+        android:textColor="#ffffff" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/btnSearchCompVoltar"
+        android:layout_below="@+id/btnSearchCompVoltar"
+        android:layout_marginTop="5dp" >
+    </TableRow>
+
+</RelativeLayout>

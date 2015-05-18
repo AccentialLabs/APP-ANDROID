@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_height="40dp"
+        layout="@layout/x_include_header" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:background="#f37165" />
+
+    <ListView
+        android:id="@+id/lvSignatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etSearchCompanyName" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lvSignatures" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/pbSignatures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!--
+         <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvTitle"
+        android:layout_marginRight="10dp"
+        android:alpha="0.4"
+        android:src="@drawable/assinaturas_on" />
+    -->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Assinaturas"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etSearchCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/imgSignLupa"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Pesquisar Empresa"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imgSignLupa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/etSearchCompanyName"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etSearchCompanyName"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/adventa_icon_lupa_on" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/etSearchCompanyName"
+        android:layout_below="@+id/etSearchCompanyName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="#cccccc" >
+    </TableRow>
+
+    <!-- rodape -->
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/x_include_footer"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnSignaturesInvitations"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circularborder"
+        android:text="99"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pbSignLoadList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lvSignatures"
+        android:layout_alignLeft="@+id/pbSignatures"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvSignLoadList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pbSignLoadList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Atualizando Lista"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnLogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="5dp"
+        android:background="#FF7F00"
+        android:text="Logar"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvStatusLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnLoginCreateNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogar"
+        android:layout_alignRight="@+id/btnLogar"
+        android:layout_below="@+id/btnLogar"
+        android:layout_marginTop="3dp"
+        android:background="#FF7F00"
+        android:text="Criar uma conta"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnLoginRecovPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLoginCreateNew"
+        android:layout_alignRight="@+id/btnLoginCreateNew"
+        android:layout_below="@+id/btnLoginCreateNew"
+        android:layout_marginTop="3dp"
+        android:background="#FF7F00"
+        android:text="Recuperar Senha"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
